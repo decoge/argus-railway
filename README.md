@@ -1,4 +1,5 @@
 # Argus on Railway (Web Terminal)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/argus?referralCode=decoge&utm_medium=integration&utm_source=template&utm_campaign=argus)
 
 This repository provides a **Railway-ready wrapper** for running **Argus**, an interactive OSINT and reconnaissance framework, in a **secure browser-based terminal** using `ttyd`.
 
@@ -29,8 +30,9 @@ This image installs **all external system tools** required by modules in `argus/
 ## 🚀 Deploy on Railway
 
 ### 1. Deploy Railway template
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/argus?referralCode=decoge&utm_medium=integration&utm_source=template&utm_campaign=argus)
 
-Railway will automatically detect the Dockerfile.
+[Railway](https://railway.com/deploy/argus?referralCode=decoge&utm_medium=integration&utm_source=template&utm_campaign=argus) will automatically detect the Dockerfile.
 
 ### 2. Set required environment variables
 
