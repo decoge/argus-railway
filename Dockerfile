@@ -32,4 +32,7 @@ RUN mkdir -p /app/argus/results
 
 EXPOSE 7681
 ENTRYPOINT ["/usr/bin/tini","--"]
-CMD ["/bin/bash","-lc","/usr/local/bin/ttyd --writable -i 0.0.0.0 -p ${PORT} -c ${USERNAME}:${PASSWORD} /bin/bash -lc 'python -m argus'"]
+CMD ["/bin/bash","-lc", "\
+/usr/local/bin/ttyd --writable -i 0.0.0.0 -p ${PORT} -c ${USERNAME}:${PASSWORD} \
+/bin/bash -lc 'argus || python -m argus || (echo \"Argus failed. Dropping to shell...\"; exec bash)' \
+"]
